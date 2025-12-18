@@ -1,4 +1,5 @@
 ﻿using System;
+using System.DirectoryServices.ActiveDirectory;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
@@ -53,6 +54,7 @@ namespace Weather
             }
             catch
             {
+                // Игнорируем ошибки в таймере очистки
             }
         }
 
